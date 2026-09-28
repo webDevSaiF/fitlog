@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Oswald } from "next/font/google";
+import Navbar from "../components/Navbar";
 import "./globals.css";
 
 const headingFont = Oswald({
@@ -24,7 +25,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${headingFont.variable} ${bodyFont.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-white font-inter">
-        {children}
+        <Navbar />
+        <div className="container mx-auto px-5">{children}</div>
       </body>
     </html>
   );
