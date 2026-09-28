@@ -1,1 +1,11 @@
 @import "tailwindcss";
+@theme {
+  --color-bg: #0c0d10;
+  --color-accent: #ccff00;
+  --color-card: #15171d;
+  --color-footer: #090a0d;
+}
+@theme inline {
+  --font-oswald: var(--font-oswald);
+  --font-inter: var(--font-inter);
+}
