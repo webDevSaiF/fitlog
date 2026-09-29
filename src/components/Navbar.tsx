@@ -1,6 +1,5 @@
-import logo from "@/assets/logo.svg";
-import Image from "next/image";
 import Link from "next/link";
+import Logo from "./Logo";
 import NavLink from "./NavLink";
 
 const navLinks = [
@@ -21,12 +20,7 @@ const Navbar = () => {
     <header className="px-4 py-4 sm:py-6.5 border-b border-[#1C1F26]">
       <div className="container mx-auto">
         <div className="flex items-center justify-between gap-5 flex-wrap">
-          <Link className="flex gap-2.5 items-center" href={"/"}>
-            <Image src={logo} alt="FitLog Logo" />
-            <p className="font-oswald font-black text-lg leading-[1.56] tracking-[0.9px]">
-              FITLOG
-            </p>
-          </Link>
+          <Logo />
           <div className="order-last w-full flex justify-center sm:order-none sm:w-auto border-t border-[#1C1F26] sm:border-none pt-4 sm:pt-0">
             {navLinks.map((nav) => (
               <NavLink key={nav.id} label={nav.label} url={nav.url} />
