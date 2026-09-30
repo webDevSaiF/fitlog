@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import WorkoutLibrary from "@/components/Library";
+import WorkoutLibrary from "@/components/Workout/WorkoutLibrary";
 import Spinner from "@/components/Spinner";
 import { Suspense } from "react";
 
